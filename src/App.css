@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #5fb2ff, #ec0606, #0b9171, #c9ffbf);
+    background-size: 800% 800%;
+    animation: gradientBackground 20s ease infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#root {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 330px) and (max-width: 500px) {
+    body{
+        width: 100%;
+    }
+
+    
+}

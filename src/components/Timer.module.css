@@ -1,0 +1,106 @@
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 500px;
+    margin: 0px auto;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 56px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.preset-container {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #16a085;
+}
+
+.alarm-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+select {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #2c3e50;
+    background: linear-gradient(45deg, #e0e0e0, #ffffff);
+    border: 1px solid #2980b9;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    font-family: 'Arial', sans-serif;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none; /* Para Safari e Chrome */
+    -moz-appearance: none; /* Para Firefox */
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMmMzZTUwIiBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgo8cGF0aCBkPSJNMTIgMTVsLTQuNS00LjVtMCAwTDggOS41Ii8+Cjwvc3ZnPgo='); /* Ícone de seta customizado */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px 12px;
+    padding-right: 50px; /* Espaçamento para o ícone de seta */
+}
+
+select:hover {
+    background: linear-gradient(45deg, #d0d0d0, #f0f0f0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+select:active {
+    background: linear-gradient(45deg, #c0c0c0, #e0e0e0);
+}
+@media (min-width: 330px) and (max-width: 500px) {
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .timer{
+        padding: 80px 0px;
+        width: 100vw;
+    }
+}
